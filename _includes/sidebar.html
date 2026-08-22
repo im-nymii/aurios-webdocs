@@ -1,0 +1,21 @@
+{% assign current = page.url %}
+<aside class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    {% for group in site.data.nav %}
+      <div class="nav-section">
+        <p class="nav-section-title">{{ group.section }}</p>
+        <ul>
+          {% for item in group.items %}
+            {% assign item_url = item.url | relative_url %}
+            {% assign is_active = false %}
+            {% if page.url == item.url %}{% assign is_active = true %}{% endif %}
+            <li>
+              <a href="{{ item_url }}" class="{% if is_active %}active{% endif %}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </nav>
+</aside>
+<div class="sidebar-backdrop" onclick="document.body.classList.remove('nav-open')"></div>

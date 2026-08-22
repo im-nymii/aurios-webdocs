@@ -1,0 +1,19 @@
+<header class="topbar">
+  <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">
+    <span></span><span></span><span></span>
+  </button>
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <img class="brand-logo" src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.title }}" width="28" height="28">
+    <span class="brand-name">{{ site.title }}</span>
+  </a>
+  <div class="search">
+    <input type="search" id="search-input" placeholder="Search…" autocomplete="off" aria-label="Search">
+    <div class="search-results" id="search-results" hidden></div>
+  </div>
+  <nav class="top-links">
+    {% if site.repo_url %}
+      <a href="{{ site.repo_url }}" class="repo-link" title="GitHub repository">GitHub</a>
+    {% endif %}
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Light/dark theme">◐</button>
+  </nav>
+</header>

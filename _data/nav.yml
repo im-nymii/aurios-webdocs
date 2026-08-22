@@ -1,0 +1,29 @@
+- section: Getting started
+  items:
+    - title: Introduction
+      url: /
+    - title: Requirements & environment
+      url: /installation/
+    - title: Building & running
+      url: /building/
+
+- section: Usage
+  items:
+    - title: The AuriOS shell
+      url: /shell/
+    - title: Command reference
+      url: /commands/
+
+- section: Development
+  items:
+    - title: Kernel architecture
+      url: /architecture/
+    - title: Project structure
+      url: /structure/
+    - title: Contributing
+      url: /contributing/
+
+- section: Help
+  items:
+    - title: FAQ
+      url: /faq/
