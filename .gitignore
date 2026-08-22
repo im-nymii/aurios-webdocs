@@ -7,5 +7,5 @@ vendor/
 Gemfile.lock
 
 # Documentation content is pulled from https://github.com/Auri-OS/docs
-_docs/*.md
+
 .docs-content/
