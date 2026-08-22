@@ -4,9 +4,12 @@ permalink: /
 ---
 
 **AuriOS** is a minimal, educational operating system kernel for the **x86
-(i686)** architecture, written from scratch in **C** and **Assembly**. The
-project explores the fundamentals of OS development: memory management,
-interrupt handling and hardware interaction.
+(i686)** architecture, written from scratch in **C** and **Assembly**. Above
+all, AuriOS is built with **privacy as its first priority**: no telemetry, no
+silent data collection, and full transparency over what the system does. The
+project explores the fundamentals of OS development, memory management,
+interrupt handling and hardware interaction, while keeping the user in
+complete control of their machine and their data.
 
 <div class="bento">
   <a class="card card--wide" href="{{ '/installation/' | relative_url }}">
