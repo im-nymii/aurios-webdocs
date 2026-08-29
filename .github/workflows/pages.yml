@@ -32,6 +32,11 @@ jobs:
           ref: main
           path: .docs-content
 
+      - name: Sync docs into _docs
+        run: |
+          rm -f _docs/*.md
+          cp .docs-content/*.md _docs/
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
