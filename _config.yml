@@ -2,28 +2,20 @@ title: AuriOS Docs
 description: Official documentation for the AuriOS project.
 author: Auri-OS
 lang: en
-# URL de base : "/aurios" si publié dans github.com/auri-os/aurios,
-# vide "" pour un dépôt de type user/organization (auri-os.github.io).
 baseurl: ""
 url: ""
 
-# Dépôt affiché dans l'en-tête
 repo_url: https://github.com/auri-os/aurios
 
-# Collection pour la documentation
 collections:
   docs:
     output: true
     permalink: /:path/
 
-# Le sommaire (nav) est défini dans _data/nav.yml
-
-# Plugins supportés par GitHub Pages
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Markdown avec ancres automatiques sur les titres
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -31,7 +23,6 @@ kramdown:
   syntax_highlighter: rouge
   toc_levels: 2..3
 
-# Layout par défaut pour les pages de docs
 defaults:
   - scope:
       path: ""
