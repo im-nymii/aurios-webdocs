@@ -60,4 +60,4 @@ complete control of their machine and their data.
 
 > AuriOS is an open project released under the MIT license. The source code is
 > available on [GitHub]({{ site.repo_url }}). See the
-> [Contributing]({{ '/contributing/' | relative_url }}) page to get involved.
+> [Contributing](/contributing/) page to get involved.
