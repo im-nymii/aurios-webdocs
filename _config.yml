@@ -2,8 +2,8 @@ title: AuriOS Docs
 description: Official documentation for the AuriOS project.
 author: Auri-OS
 lang: en
-baseurl: ""
-url: ""
+baseurl: "/docs"
+url: "https://auri-os.org"
 
 repo_url: https://github.com/auri-os/documentation
 
