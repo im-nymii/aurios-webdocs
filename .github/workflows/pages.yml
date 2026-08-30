@@ -1,10 +1,9 @@
-name: Déploiement GitHub Pages
+name: Git Pages deploiement
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
-  # Déclenché par un push sur Auri-OS/docs (voir le workflow côté contenu)
   repository_dispatch:
     types: [docs-updated]
 
@@ -13,7 +12,6 @@ permissions:
   pages: write
   id-token: write
 
-# Un seul déploiement concurrent
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -28,7 +26,7 @@ jobs:
       - name: Checkout docs content
         uses: actions/checkout@v4
         with:
-          repository: Auri-OS/docs
+          repository: Auri-OS/documentation
           ref: main
           path: .docs-content
 
